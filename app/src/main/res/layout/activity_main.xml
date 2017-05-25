@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wzl.main.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="VerticalHorizontalTextView"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <com.example.wzl.main.VerticalHorizontalTextView
+        android:id="@+id/vertical_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:maxLines="1"
+        app:textSize="16sp"
+        app:textColor="#ff0000">
+
+    </com.example.wzl.main.VerticalHorizontalTextView>
+
+</android.support.constraint.ConstraintLayout>
