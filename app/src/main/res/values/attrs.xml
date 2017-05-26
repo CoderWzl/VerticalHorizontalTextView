@@ -4,5 +4,9 @@
         <attr name="textSize" format="dimension"/>
         <attr name="textColor" format="color"/>
         <attr name="maxLines" format="integer"/>
+        <attr name="scrollOrientation">
+            <enum name="scroll_vertical" value="0"/>
+            <enum name="scroll_horizontal" value="1"/>
+        </attr>
     </declare-styleable>
 </resources>
